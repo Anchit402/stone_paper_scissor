@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #100956;
+}
+.score{
+    position: relative;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+}
+.score h2{
+    text-align: center;
+    padding: 20px;
+}
+.intro{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: grey;
+}
+#play-button{
+    position: relative;
+    background-color: green;
+    border: none;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 4px;
+}
+.match{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.match h2{
+    color: grey;
+}
+.hand{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+.option{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+}
+.stone,.paper,.scissor{
+    background-color: green;
+    border: none;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 4px;
+}
+.computer-hand{
+    transform: rotateY(180deg);
+}
+.fadeout{
+    display: none;
+}
+img{
+    height: 30vh;
+    width: 20vw;
+}
+@media only screen and (max-width: 600px) {
+    .img {
+        height: 20vh;
+        width: 10vw;
+    }
+}
